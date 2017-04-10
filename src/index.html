@@ -2,17 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>API Documentation</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!--<lin k hr ef="assets/css /bootstrap.tether.css" rel="stylesheet">-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    
+    <!--<lin k hr ef="assets/css /bootstrap.tether.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">-->
 
-    <style type="text/css">
+
+        <style type="text/css">
       .guide {
         position: fixed;
         overflow: hidden;
@@ -78,48 +82,56 @@
       .tab-content {
         color: #fff;
       }
+
+      .logo {
+        font-size: 32px;
+        padding: 10px;
+      }
+
+      .nav-search {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .nav-search input {
+        border-radius: 0px;
+        width: 100%;
+      }
+
+      .nav-search button {
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 0px;
+      }
     </style>
+
   </head>
 
   <body style="position: relative;" data-spy="scroll" data-target="#navbar-example">
 
     <div class="row">
       <div class="col-sm-12 col-md-2 col-lg-2" id="navbar-example">
-        
-        <nav class="navbar guide">
-          <div class="">
-            <a class="navbar-brand" href="#">API</a>
-            
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#introduction">Introduction</a>
-              </li>
+      <div class="guide">
+      <nav class="navbar" style="height: 100%;">
+      <div class="logo text-center">
+        <a class="" href="#">API Docs</a>
+      </div>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#responses">Response codes</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#authentication">Authentication</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-
+        <ul class="nav nav-sidebar ">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+         <div class="nav-search">
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+            </div>
           </div>
           
-        </nav>
+          </nav>
       </div>
 
       <div class="col-sm-12 col-md-10">
@@ -249,21 +261,15 @@
     </div><!-- END: main row -->
 
 
-    <script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
-
-
-   
-    <script src="assets/js/tether.js"></script>
-    
-       <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/umd/tab.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>
+       
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
     <script>
-      $('body').scrollspy({ target: '#navbar-example' })
+      //$('body').scrollspy({ target: '#navbar-example' })
     </script>
   </body>
 </html>
